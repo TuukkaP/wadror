@@ -1,4 +1,4 @@
-Webpalvelinohjelmointi 2014 kevät -kurssin RoR demosovellus
+Webpalvelinohjelmointi 2014 kevät -kurssin demosovellus
 
 RateBeer
 ======
