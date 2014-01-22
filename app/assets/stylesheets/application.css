@@ -11,3 +11,15 @@
  *= require_self
  *= require_tree .
  */
+.nav {
+    padding: 7px;
+    background: paleturquoise;
+}
+
+#footer {
+    background: paleturquoise;
+}
+
+.credit {
+    font-style: oblique;
+}
