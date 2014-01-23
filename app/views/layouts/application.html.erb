@@ -8,9 +8,9 @@
 </head>
 <body>
 <ul class="nav">
-  <li><%= link_to 'breweries', breweries_path %></li>
-  <li><%= link_to 'beers', beers_path %></li>
-  <li><%= link_to 'ratings', ratings_path %></li>
+  <li><%= link_to 'breweries', breweries_path %><%= "<----" if params[:controller] == "breweries" %></li>
+  <li><%= link_to 'beers', beers_path %><%= "<----" if params[:controller] == "beers" %></li>
+  <li><%= link_to 'ratings', ratings_path %><%= "<----" if params[:controller] == "ratings" %></li>
 </ul>
 
 <%= yield %>

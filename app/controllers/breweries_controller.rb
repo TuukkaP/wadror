@@ -1,5 +1,13 @@
 class BreweriesController < ApplicationController
   before_action :set_brewery, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate, :only => [:destroy]
+
+   def authenticate
+      admin_accounts = { "admin" => "secret", "pekka" => "beer", "arto" => "foobar", "matti" => "ittam"}
+      authenticate_or_request_with_http_basic do |username, password|
+        password == admin_accounts[username]
+      end
+  end
 
   # GET /breweries
   # GET /breweries.json
@@ -28,7 +36,7 @@ class BreweriesController < ApplicationController
 
     respond_to do |format|
       if @brewery.save
-        format.html { redirect_to @brewery, notice: 'Brewery was successfully created.' }
+        format.html { redirect_to breweries_path, notice: 'Brewery was successfully created.' }
         format.json { render action: 'show', status: :created, location: @brewery }
       else
         format.html { render action: 'new' }
