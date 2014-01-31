@@ -1,0 +1,7 @@
+<% if !current_user.nil? %>
+    <h1>Change password of <%= current_user.username %></h1>
+<% else %>
+    <h1>Editing user</h1>
+<% end %>
+<%= render 'form' %>
+

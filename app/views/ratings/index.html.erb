@@ -4,7 +4,11 @@ Number of ratings: <%= @ratings.count %>
 
 <ul>
   <% @ratings.each do |rating| %>
-      <li> <%= rating %> <%= link_to 'Delete', rating, method: :delete, data: { confirm: 'Are you sure?' } %> </li>
+      <li> <%= rating %>
+        <% if rating.user == current_user %>
+            <%= link_to 'delete', rating, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <% end %>
+      </li>
   <% end %>
 </ul>
 
