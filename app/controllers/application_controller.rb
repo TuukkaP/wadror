@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
 
   def current_user
     return nil if session[:user_id].nil?
-    return User.find(session[:user_id]) if !User.find_by(id: session[:user_id]).nil?
+    return User.find(session[:user_id]) unless User.find_by(id: session[:user_id]).nil?
     session[:user_id] = nil
    end
 end

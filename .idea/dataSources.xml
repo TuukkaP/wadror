@@ -7,6 +7,12 @@
       <jdbc-url>jdbc:sqlite:C:\Users\tuukka\Documents\ratebeer\db\development.sqlite3</jdbc-url>
       <libraries />
     </data-source>
+    <data-source source="LOCAL" name="Rails ratebeer: test" uuid="fffa972e-7c5b-4f24-a713-a4b39f1e0ead">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\tuukka\Documents\ratebeer\db\test.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
   </component>
 </project>
 

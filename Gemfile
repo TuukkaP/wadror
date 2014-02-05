@@ -46,8 +46,19 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+#group :development, :test do
+#  gem 'rspec-rails', '~> 2.14.1'
+#end
+
 group :development, :test do
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 2.14.1'
+end
+
+group :test do
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'launchy'
 end
 
 group :production do
