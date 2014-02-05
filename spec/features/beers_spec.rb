@@ -4,6 +4,8 @@ include OwnTestHelper
 describe "Beer" do
 
   before :each do
+    FactoryGirl.create :user
+    sign_in(username:"Pekka", password:"Foobar1")
     FactoryGirl.create(:style, name:"IPA")
     FactoryGirl.create(:brewery, name:"BrewDog")
     FactoryGirl.create(:beer, name:"Karhu III")
