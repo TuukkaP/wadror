@@ -9,8 +9,8 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: 27Vj2zPXKEQhFn70t0VC/DWGl0w97fnSlVX+RceeHq/tBVHHbLT74uvZYqw1EbRmVkbaQ7u9NvMrUuRhFKck3xEuPIyufl4XhNjFLl7zr4xfY5SEAXC3xN8AV96D7YOnfwuXWC+WjllO2WTgvZFg2nI3W8ZTRQG3sHkS4/lsy+s=
+    secure: cXTUJBVvYzWtwlm9P7D4afeXB34wYzxRq9PnWlmPFT5NuEURV4ZgzXs/MUVvlkLpKXjlaMXq3HbYM8DkbJ5S0teBfoRAoblgiQr5F8X3b2eBxoqfjUnNA2p1iDNy0xUbbGAg/XgT3Xm7P/ym+PUOFiIotWUpSlnmboFdM3e/BIA=
   app: name
   on:
     repo: TuukkaP/wadror
-  run: "rake db:migrate"
+  run: rake db:migrate

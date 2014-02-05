@@ -23,10 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="35" selection-start="673" selection-end="673" vertical-scroll-proportion="0.41948053" vertical-offset="0" max-vertical-offset="770">
+            <state line="20" column="5" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".travis.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="0.35324675" vertical-offset="0" max-vertical-offset="770">
               <folding />
             </state>
           </provider>
@@ -675,13 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="24" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/beers_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="63" selection-start="231" selection-end="231" vertical-scroll-proportion="0.067729086" vertical-offset="0" max-vertical-offset="1496">
@@ -810,7 +812,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="35" selection-start="673" selection-end="673" vertical-scroll-proportion="0.41948053" vertical-offset="0" max-vertical-offset="770">
+        <state line="20" column="5" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="0.35324675" vertical-offset="0" max-vertical-offset="770">
           <folding />
         </state>
       </provider>
