@@ -6,6 +6,8 @@ describe "User" do
 
   describe "who has signed up" do
     it "can signin with right credentials" do
+      BeerClub
+      BeerClubsController
       sign_in(username:"Pekka", password:"Foobar1")
 
       expect(page).to have_content 'Welcome back!'
@@ -25,7 +27,6 @@ describe "User" do
     fill_in('user_username', with:'Brian')
     fill_in('user_password', with:'Secret55')
     fill_in('user_password_confirmation', with:'Secret55')
-
     expect{
       click_button('Create User')
     }.to change{User.count}.by(1)
@@ -34,6 +35,8 @@ describe "User" do
   it "is shown favorite style and brewery" do
     create_beers_with_ratings(12,2,3,41,5, user)
     sign_in(username:"Pekka", password:"Foobar1")
-    save_and_open_page
+    expect(page).to have_content 'tyyli'
+    expect(page).to have_content 'anon brewery'
+    expect(page).to have_content 'anon beer'
   end
 end

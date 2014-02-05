@@ -14,7 +14,7 @@ FactoryGirl.define do
   end
 
   factory :brewery do
-    name "anonymous"
+    name "anon brewery"
     year 1900
   end
 
@@ -24,10 +24,21 @@ FactoryGirl.define do
   end
 
   factory :beer do
-    name "anony"
+    name "anon beer"
     brewery
     style
   end
 
+  factory :beer_club do
+    name "Anon club"
+    year 1900
+    city "Helsinki"
+    membership
+  end
+
+  factory :membership do
+    user
+    beer_club
+  end
 
 end

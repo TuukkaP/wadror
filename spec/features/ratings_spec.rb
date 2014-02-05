@@ -52,6 +52,5 @@ describe "Rating" do
     visit user_path(user)
     expect(page).to have_content 'has made 5 ratings, average rating 12.6'
     expect(page).not_to have_content '49'
-    save_and_open_page
   end
 end
