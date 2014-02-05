@@ -23,15 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="28" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ratings_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/features/ratings_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -62,10 +53,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".travis.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="30" selection-start="198" selection-end="198" vertical-scroll-proportion="0.20318726" vertical-offset="0" max-vertical-offset="753">
+            <state line="9" column="30" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="72" selection-start="227" selection-end="227" vertical-scroll-proportion="0.30357143" vertical-offset="0" max-vertical-offset="728">
               <folding />
             </state>
           </provider>
@@ -126,7 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/breweries/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/breweries/show.html.erb" />
         <option value="$PROJECT_DIR$/lib/AverageRating" />
         <option value="$PROJECT_DIR$/config/application.rb" />
@@ -177,6 +176,7 @@
         <option value="$PROJECT_DIR$/spec/factories.rb" />
         <option value="$PROJECT_DIR$/spec/features/users_spec.rb" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -562,11 +562,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/memberships/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="49" selection-start="335" selection-end="335" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="595" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/membership.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="42" selection-start="124" selection-end="124" vertical-scroll-proportion="0.09497207" vertical-offset="0" max-vertical-offset="716" />
@@ -857,7 +852,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="30" selection-start="198" selection-end="198" vertical-scroll-proportion="0.20318726" vertical-offset="0" max-vertical-offset="753">
+        <state line="9" column="30" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="72" selection-start="227" selection-end="227" vertical-scroll-proportion="0.30357143" vertical-offset="0" max-vertical-offset="728">
           <folding />
         </state>
       </provider>
