@@ -10,7 +10,7 @@ deploy:
   provider: heroku
   api_key:
     secure: cXTUJBVvYzWtwlm9P7D4afeXB34wYzxRq9PnWlmPFT5NuEURV4ZgzXs/MUVvlkLpKXjlaMXq3HbYM8DkbJ5S0teBfoRAoblgiQr5F8X3b2eBxoqfjUnNA2p1iDNy0xUbbGAg/XgT3Xm7P/ym+PUOFiIotWUpSlnmboFdM3e/BIA=
-  app: name
+  app: infinite-oasis-1199
   on:
     repo: TuukkaP/wadror
   run: rake db:migrate

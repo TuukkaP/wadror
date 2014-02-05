@@ -35,7 +35,7 @@
       <file leaf-file-name=".travis.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="0.35324675" vertical-offset="0" max-vertical-offset="770">
+            <state line="12" column="26" selection-start="441" selection-end="441" vertical-scroll-proportion="0.26493508" vertical-offset="0" max-vertical-offset="770">
               <folding />
             </state>
           </provider>
@@ -117,7 +117,6 @@
         <option value="$PROJECT_DIR$/spec/factories.rb" />
         <option value="$PROJECT_DIR$/spec/features/users_spec.rb" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/app/controllers/beer_clubs_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/beers_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/breweries_controller.rb" />
@@ -129,6 +128,7 @@
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -819,7 +819,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="0.35324675" vertical-offset="0" max-vertical-offset="770">
+        <state line="12" column="26" selection-start="441" selection-end="441" vertical-scroll-proportion="0.26493508" vertical-offset="0" max-vertical-offset="770">
           <folding />
         </state>
       </provider>
