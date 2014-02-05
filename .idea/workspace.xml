@@ -53,19 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name=".travis.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="30" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="72" selection-start="227" selection-end="227" vertical-scroll-proportion="0.30357143" vertical-offset="0" max-vertical-offset="728">
+            <state line="15" column="24" selection-start="482" selection-end="482" vertical-scroll-proportion="0.33864543" vertical-offset="0" max-vertical-offset="753">
               <folding />
             </state>
           </provider>
@@ -175,8 +166,8 @@
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/spec/factories.rb" />
         <option value="$PROJECT_DIR$/spec/features/users_spec.rb" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -850,16 +841,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="30" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+        <state line="13" column="66" selection-start="220" selection-end="221" vertical-scroll-proportion="0.30357143" vertical-offset="0" max-vertical-offset="728">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="72" selection-start="227" selection-end="227" vertical-scroll-proportion="0.30357143" vertical-offset="0" max-vertical-offset="728">
+        <state line="15" column="24" selection-start="482" selection-end="482" vertical-scroll-proportion="0.33864543" vertical-offset="0" max-vertical-offset="753">
           <folding />
         </state>
       </provider>
