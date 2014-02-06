@@ -13,4 +13,4 @@ deploy:
   app: infinite-oasis-1199
   on:
     repo: TuukkaP/wadror
-  run: rake db:migrate
+  run: "rake db:migrate"
