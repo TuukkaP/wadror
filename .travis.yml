@@ -9,8 +9,8 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: cXTUJBVvYzWtwlm9P7D4afeXB34wYzxRq9PnWlmPFT5NuEURV4ZgzXs/MUVvlkLpKXjlaMXq3HbYM8DkbJ5S0teBfoRAoblgiQr5F8X3b2eBxoqfjUnNA2p1iDNy0xUbbGAg/XgT3Xm7P/ym+PUOFiIotWUpSlnmboFdM3e/BIA=
+    secure: YRxriIo2uaK/kHqtsv4Fnm9rDCObDlvsTqpb+k5KMujebjASWWev3x/BwYsv84/tYKmBdLMXwM79Z4lQ2Z4Hbb3CTnJYb/PEamYQ3h6eVGnDCC6G3ol1UlTY+0S9TtUkc8PCTTDfscA68C1OiPFsd4cSnS0+bcax9+21LjviZ4s=
   app: infinite-oasis-1199
   on:
     repo: TuukkaP/wadror
-  run: "rake db:migrate"
+  run: rake db:migrate
