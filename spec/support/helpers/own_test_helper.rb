@@ -2,6 +2,7 @@ module OwnTestHelper
 
   def sign_in(credentials)
     visit signin_path
+    save_and_open_page
     fill_in('username', with:credentials[:username])
     fill_in('password', with:credentials[:password])
     click_button('Log in')

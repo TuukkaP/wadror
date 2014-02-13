@@ -28,6 +28,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'byebug', group: [:development, :test]
+gem 'httparty'
+gem "rails-settings-cached", "0.3.1"
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -60,9 +62,12 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov', require: false
+  gem 'webmock'
 end
 
 group :production do
    gem 'pg'
-   gem 'rails_12factor' 
+   gem 'rails_12factor'
+   #gem 'dalli'
+   #gem 'memcachier'
 end

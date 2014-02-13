@@ -22,6 +22,17 @@
       <li> <%= link_to u.username, u %></li>
   <% end %>
 </ul>
+<% unless current_user.nil? %>
+<% if @member == false %>
+    <%= form_for(@membership) do |f| %>
+        <%= f.hidden_field :beer_club_id %>
+        <%= f.hidden_field :user_id %>
+        <%= f.submit value:"join the club" %>
+    <% end %>
+<% else %>
+    <%= link_to 'Resign from the club', @membership, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%end %>
+<%end %>
 </p>
 
 <%= link_to 'Edit', edit_beer_club_path(@beer_club) %> |

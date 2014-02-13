@@ -1,7 +1,7 @@
 Ratebeer::Application.routes.draw do
   resources :styles
 
-  resources :memberships
+  resources :memberships, only: [:new, :create, :destroy]
 
   resources :beer_clubs
 
@@ -15,6 +15,10 @@ Ratebeer::Application.routes.draw do
 
   get '/home', to: 'breweries#index'
   get 'kaikki_bisset', to: 'beers#index'
+
+  #places ohjaukset
+  resources :places, only:[:index, :show]
+  post 'places', to:'places#search'
 
   resources :ratings, :only => [:index, :new, :create, :destroy]
   resources :sessions, only: [:new, :create, :destroy]

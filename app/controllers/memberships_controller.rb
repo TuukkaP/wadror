@@ -11,6 +11,7 @@ class MembershipsController < ApplicationController
   # GET /memberships/1
   # GET /memberships/1.json
   def show
+    redirect_to beer_clubs_path
   end
 
   # GET /memberships/new
@@ -31,7 +32,7 @@ class MembershipsController < ApplicationController
 
     respond_to do |format|
       if @membership.save
-        format.html { redirect_to @membership, notice: 'Membership was successfully created.' }
+        format.html { redirect_to :back, notice: 'Membership was successfully created.' }
         format.json { render action: 'show', status: :created, location: @membership }
       else
         @clubs = BeerClub.all
@@ -47,7 +48,7 @@ class MembershipsController < ApplicationController
   def update
     respond_to do |format|
       if @membership.update(membership_params)
-        format.html { redirect_to @membership, notice: 'Membership was successfully updated.' }
+        format.html { redirect_to beer_clubs_path, notice: 'Membership was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -61,7 +62,7 @@ class MembershipsController < ApplicationController
   def destroy
     @membership.destroy
     respond_to do |format|
-      format.html { redirect_to memberships_url }
+      format.html { redirect_to :back, notice: "You have resigned from the club" }
       format.json { head :no_content }
     end
   end
