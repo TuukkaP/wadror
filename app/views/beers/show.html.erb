@@ -22,8 +22,7 @@
         <%= f.submit %>
     <% end %>
 
-    <%= link_to 'Edit', edit_beer_path(@beer) %>
-
 <% end %>
 
+<%= edit_and_destroy_buttons(@beer) %>
 <%= link_to 'Back', beers_path %>

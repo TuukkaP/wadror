@@ -1,14 +1,16 @@
 <p id="notice"><%= notice %></p>
-
-<p><h2>
-  <strong>Name:</strong>
-  <%= @brewery.name %></h2>
-</p>
+<% cache @brewery do %>
+<h2><%= @brewery.name %>
+  <% if not @brewery.active  %>
+      <span class="label label-info">retired</span>
+  <% end %>
+</h2>
 
 <p>
   <strong>Established at
   <%= @brewery.year %></strong>
 </p>
+<%= link_to "change activity", toggle_activity_brewery_path(@brewery.id), method: :post %> <br>
 
 <%= link_to 'Edit', edit_brewery_path(@brewery) %>
 <br><br>
@@ -18,6 +20,7 @@
 <br>
  <strong>Number of beers: <%= @brewery.beers.count%></strong>
 <br>
+<% end %>
 <% if @brewery.ratings.empty? %>
     Brewerys beers have not yet been rated!
 <% else %>

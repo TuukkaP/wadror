@@ -30,10 +30,10 @@ describe "Rating" do
     create_beers_with_ratings(12,2,3,41,5, user)
     create_beers_with_ratings(50,49, user2)
     visit ratings_path
-    expect(page).to have_content 'Number of ratings: 7'
-    expect(page).to have_content '12'
+    expect(page).to have_content 'Number of ratings: 5'
+    expect(page).to have_content '3'
     expect(page).to have_content '41'
-    expect(page).to have_content '49'
+    expect(page).to have_content '5'
     expect(page).to have_content '50'
   end
 
@@ -41,9 +41,9 @@ describe "Rating" do
     create_beers_with_ratings(12,2,3,41,5, user)
     create_beers_with_ratings(50,49, user2)
     visit ratings_path
-    page.all(:link,"delete")[3].click
-    expect(page).not_to have_content '41'
-    expect(page).to have_content 'Number of ratings: 6'
+    expect{
+      page.all(:link,"delete")[2].click
+    }.to change{Rating.count}.from(7).to(6)
   end
 
   it "users own ratings are shown in user show page" do

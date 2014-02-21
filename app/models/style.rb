@@ -10,6 +10,11 @@ class Style < ActiveRecord::Base
     taulu.max_by { |k, v| v }
   end
 
+  def self.top(n)
+    sorted_by_rating_in_desc_order = Style.all.sort_by{ |s| -(s.beers.inject(0) { |sum,  b| sum + b.average_rating.to_f } || 0) }
+    sorted_by_rating_in_desc_order.take(n)
+  end
+
   def to_s
     "#{name}"
   end

@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'byebug', group: [:development, :test]
 gem 'httparty'
 gem "rails-settings-cached", "0.3.1"
+gem 'jquery-turbolinks'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -55,6 +56,7 @@ end
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 2.14.1'
+  gem 'rack-mini-profiler'
 end
 
 group :test do
@@ -63,6 +65,8 @@ group :test do
   gem 'launchy'
   gem 'simplecov', require: false
   gem 'webmock'
+  gem 'selenium-webdriver'
+  gem 'database_cleaner', '< 1.1.0'
 end
 
 group :production do

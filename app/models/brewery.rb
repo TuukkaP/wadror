@@ -7,6 +7,9 @@ class Brewery < ActiveRecord::Base
 
   validate :brewery_cannot_be_established_in_the_future
 
+  scope :active, -> { where active:true }
+  scope :retired, -> { where active:[nil,false] }
+
   has_many :beers, :dependent => :destroy
   has_many :ratings, :through => :beers
 
@@ -32,6 +35,13 @@ class Brewery < ActiveRecord::Base
     taulu = Array.new()
     Brewery.all.each { |s| taulu += [s.name => s.average_rating.to_f] unless s.average_rating.nil?}
     taulu.max_by { |k, v| v }
+  end
+
+  def self.top(n)
+    sorted_by_rating_in_desc_order = Brewery.all.sort_by{ |b| -(b.average_rating||0) }
+    sorted_by_rating_in_desc_order.take(n)
+    # palauta listalta parhaat n kappaletta
+    # miten? ks. http://www.ruby-doc.org/core-2.1.0/Array.html
   end
 
   def to_s
