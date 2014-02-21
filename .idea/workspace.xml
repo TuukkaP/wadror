@@ -35,7 +35,7 @@
       <file leaf-file-name="beerlist_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/features/beerlist_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="62" selection-start="464" selection-end="464" vertical-scroll-proportion="0.26211452" vertical-offset="0" max-vertical-offset="1190">
+            <state line="53" column="47" selection-start="1813" selection-end="1813" vertical-scroll-proportion="0.68171805" vertical-offset="282" max-vertical-offset="1190">
               <folding />
             </state>
           </provider>
@@ -1129,7 +1129,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/beerlist_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="62" selection-start="464" selection-end="464" vertical-scroll-proportion="0.26211452" vertical-offset="0" max-vertical-offset="1190">
+        <state line="53" column="47" selection-start="1813" selection-end="1813" vertical-scroll-proportion="0.68171805" vertical-offset="282" max-vertical-offset="1190">
           <folding />
         </state>
       </provider>
